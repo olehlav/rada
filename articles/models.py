@@ -22,3 +22,6 @@ class Article(models.Model):
 
 	class Meta():
 		db_table = 'article'
+	
+	def __str__(self):
+		return self.title
